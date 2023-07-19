@@ -1,0 +1,367 @@
+/* === Estilo general === */
+
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Belanosima', sans-serif;
+    max-width: 768px;
+
+}
+
+html {
+
+    font-size: 10px;
+    scroll-behavior: smooth;
+    scroll-padding: calc(0.4rem + 3.5vw);
+        
+}
+
+img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+h1 {
+
+    font-size: calc(0.5rem + 2vw);
+    padding: 1vw;
+
+}
+
+strong {
+
+    font-size: calc(0.25rem + 2vw);
+    padding: 1vw;
+
+}
+
+h2 {
+
+    font-size: 1.8rem;
+    padding: 1rem 0 0 1rem;
+    
+}
+
+h3 {
+
+    font-size: 1.4rem;
+    padding: 1rem 0 0 1rem;
+    
+}
+
+p {
+
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 1rem 0 0 1rem;
+
+}
+
+.domicilio p {
+
+    padding: 1rem 0.3rem 0 1rem;
+
+}
+
+
+/* === Diseño mobile === */
+
+
+.contenedor {
+
+    background-color: #fc7300;
+    width: 95vw;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4);
+    grid-template-areas:
+                            "navegacion"
+                            "encabezado"
+                            "principal"
+                            "pie";
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}
+
+
+/* = Nav = */
+
+
+.navegacion {
+
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 95vw;
+    grid-area: navegacion;
+    position: fixed;
+    z-index: 1
+
+}
+
+.menu {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1vw 0;
+    list-style-type: none;
+
+}
+
+li a {
+
+    color: #00425a;
+    font-size: 1.4rem;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+
+}
+
+li a::after {
+
+    content: '';
+    background-color: #1f8a70;
+    width: 0%;
+    height: 4px;
+    border-radius: 2rem;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: all 0.9s;
+
+}
+
+li a:hover::after {
+
+    width: 100%;
+
+}
+
+li a:hover {
+
+    color: #1f8a70;
+
+}
+
+
+/* = Header = */
+
+
+.encabezado {
+
+    color: #00425a;
+    background-color: #eff5f5;
+    grid-area: encabezado;
+
+}
+
+.box1 {
+    
+    background-color: #eff5f5;
+    width: 95vw;
+    height: 45vw;
+        
+}
+
+.banner {
+
+    position: relative;
+
+}
+
+#titulo {
+
+    width: 95vw;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    color: #eff5f5;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: right;
+
+}
+
+
+/* = Main = */
+
+
+.principal {
+
+    grid-area: principal;
+
+}
+
+#formulario {
+    
+    color: #eff5f5;
+    background-color: #1f8a70;
+    display: flex;
+    justify-content: center;
+          
+}
+
+label {
+
+    font-size: 1.4rem;
+    margin-left: 1rem;
+
+}
+
+input {
+    
+    font-size: 1.2rem;
+    text-align: left;
+    width: 285px;
+    height: 30px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+textarea {
+
+    font-size: 1.2rem;
+    text-align: justify;
+    width: 285px;
+    height: 185px;
+    margin-left: 1rem;
+    border: 0px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+
+}
+
+.cover {
+
+    object-fit: cover;
+
+}
+
+
+.boton {
+
+    color: #eff5f5;
+    background-color: #181823;
+    width: 200px;
+    height: 35px;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    transition: all 0.8s;
+    margin: 1rem 0 1rem 5rem;
+    cursor: pointer;
+                
+}
+
+.boton:hover {
+    
+    color: #181823;
+    background-color: #eff5f5;
+    box-shadow: 5px 5px 5px #181823;
+
+}
+
+
+/* = Footer = */
+
+
+.pie {
+
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+    grid-template-areas:    "domicilio"
+                            "contacto"
+                            "redes";
+    justify-content: space-evenly;
+    align-content: stretch;
+    grid-area: pie;
+
+}
+
+.redes {
+
+    color: #181823;
+    background-color: #eff5f5;
+    grid-area: redes;
+
+}
+
+.domicilio {
+
+    color: #181823;
+    background-color: #eff5f5;
+    grid-area: domicilio;
+
+}
+
+.mapa {
+
+    padding: 2rem 0;
+
+}
+
+.contacto {
+
+    color: #181823;
+    background-color: #eff5f5;
+    grid-area: contacto;
+
+}
+
+.contieneRedes, .contieneContactos {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0;
+    
+}
+
+.iconos, .iconoF {
+
+    width: calc(2rem + 2vw);
+    height: calc(2rem + 2vw);
+    background-color: #eff5f5;
+    transition: all 0.8s;
+
+}
+
+.iconos:hover {
+
+    box-shadow: 5px 5px 5px #1f8a70;
+    border-radius: 5rem;
+
+}
+
+.iconoF:hover {
+
+    box-shadow: 5px 5px 5px #1f8a70;
+    border-radius: 0.9rem;
+
+}
+
+
+/* === Diseño con brek point a 769px === */
+
+
+@media screen and (min-width: 769px) {
+
+    .contenedor {
+        
+        margin-left: calc((100vw - 768px) / 2);
+
+    }
+
+}
