@@ -110,14 +110,6 @@
 
                         <div>
 
-                            <label for="confirma">Confirmación de e-mail</label><br>
-
-                            <input type="email" name="email" id="confirma" placeholder="Ingrese nuevamente su dirección de e-mail" maxlength="40" required>
-                        
-                        </div><br>
-
-                        <div>
-
                             <label for="comentario">Comentarios</label><br>
 
                             <textarea name="comentario" id="comentario" placeholder="Máximo 500 caracteres" maxlength="500"  required></textarea>
@@ -130,10 +122,22 @@
                         
                         </div>
 
-                        <div> <!-- campos ocultos sugeridos en la documentación de https://formsubmit.co/ -->
+                        <!-- campos ocultos sugeridos en la documentación de https://formsubmit.co/ -->
 
-                            <input type="hidden" name="_captcha" value="true"> <!-- el valor "false" deshabilita esta característica adicional -->
+                        <div>
+
+                            <!-- <input type="hidden" name="_captcha" value="false"> -->
+                        
+                        </div>
+
+                        <div>
+                            
                             <input type="hidden" name="_autoresponse" value="Muchas gracias. Recibimos su mensaje y le responderemos a la brevedad.">
+                        
+                        </div>
+
+                        <div>
+                            
                             <input type="text" name="_honey" style="display:none">
 
                         </div>
