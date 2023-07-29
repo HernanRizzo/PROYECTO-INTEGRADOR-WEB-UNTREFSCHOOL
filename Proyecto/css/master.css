@@ -1,79 +1,56 @@
 /* === Estilo general === */
 
-
 * {
-
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 html {
-
     font-family: 'Poppins', 'Belanosima', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
-    scroll-padding: calc(0.4rem + 3.5vw);
-
-    
+    scroll-padding: calc(2rem + 3.5vw);
 }
 
 img {
-
     width: 100%;
     height: 100%;
-
 }
 
 h1 {
-
     font-size: calc(0.5rem + 2vw);
     padding: 1vw;
-
 }
 
 strong {
-
     font-size: calc(0.25rem + 2vw);
     padding: 1vw;
-
 }
 
 h2 {
-
     font-size: 1.8rem;
     padding: 1rem 0 0 1rem;
-    
 }
 
 h3 {
-
     font-size: 1.4rem;
     padding: 1rem 0 0 1rem;
-    
 }
 
 p {
-
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     text-align: justify;
     padding: 1rem 0 0 1rem;
-
 }
 
 .domicilio p {
-
     padding: 1rem 0.3rem 0 1rem;
-
 }
-
 
 /* === Diseño mobile === */
 
-
 .contenedor {
-
     width: 95vw;
     margin: 0 auto;
     background-color: #fc7300;
@@ -91,45 +68,35 @@ p {
                             "pie";
     justify-content: space-evenly;
     align-content: space-evenly;
-
 }
-
 
 /* = Nav = */
 
-
 .navegacion {
-
     width: 95vw;
     background-color: rgba(255, 255, 255, 0.85);
     grid-area: navegacion;
     position: fixed;
     z-index: 1;
-
 }
 
 .menu {
-
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1vw 0;
     list-style-type: none;
-
 }
 
 li a {
-
     color: #00425a;
     font-size: calc(0.4rem + 1vw);
     text-decoration: none;
     position: relative;
     display: inline;
-
 }
 
 li a::after {
-
     content: '';
     background-color: #1f8a70;
     width: 0%;
@@ -139,65 +106,47 @@ li a::after {
     left: 0;
     bottom: -4px;
     transition: all 0.9s;
-
 }
 
 li a:hover::after {
-
     width: 100%;
-
 }
 
 li a:hover {
-
     color: #1f8a70;
-
 }
 
 #desplegable {
-
     display: none;
-
 }
 
 .despliega {
-
     float: left;
     display: none;
     color: #00425a;
     font-size: 2rem;
     padding: 0.5rem;
-
 }
-
 
 /* = Header = */
 
-
 .encabezado {
-
     color: #00425a;
     background-color: #eff5f5;
     grid-area: encabezado;
-
 }
 
 .box1 {
-    
     background-color: #eff5f5;
     width: 95vw;
     height: 45vw;
-    
 }
 
 .banner {
-
     position: relative;
-
 }
 
-#titulo {
-
+.titulo {
     color: #eff5f5;
     background-color: rgba(0, 0, 0, 0.6);
     width: 95vw;
@@ -205,15 +154,11 @@ li a:hover {
     bottom: 2rem;
     right: 0;
     text-align: right;
-
 }
-
 
 /* = Main = */
 
-
 .principal {
-
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 1fr;
@@ -223,137 +168,101 @@ li a:hover {
     justify-content: space-evenly;
     align-content: stretch;
     grid-area: principal;
-
 }
 
 #somos {
-    
     color: #181823;
     background-color: #eff5f5;
     grid-area: somos;
-   
 }
 
 #elegirnos {
-
     color: #181823;
     background-color: #eff5f5;
     grid-area: elegirnos;
-    
 }
 
 #somos > p, #elegirnos > p {
-
     padding: 1rem;
     text-align: justify;
-
 }
 
 .box2 {
-    
     float: left;
     background-color: #eff5f5;
-    width: 125px;
-    height: 78px;
+    width: 175px;
+    height: 109px;
     border-radius: 5px;
-    padding: 2rem 2rem 0 1rem;
-
+    padding: 2rem 2rem 1rem 1rem;
 }
   
 .box3 {
-    
     float: right;
     background-color: #eff5f5;
-    width: 125px;
-    height: 78px;
+    width: 175px;
+    height: 109px;
     border-radius: 5px;
-    padding: 2rem 1rem 0 2rem;
-
+    padding: 2rem 1rem 1rem 2rem;
 }
 
 .cover {
-
     object-fit: cover;
-
 }
-
 
 /* = Section - Propuesta educativa = */
 
-
 #propuesta {
-
     color: #181823;
     background-color: #eff5f5;
     grid-area: propuesta;
-
 }
 
 .botones {
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem 0;
-    
 }
 
 .boton {
-
     background-color: #181823;
     width: 18vw;
     height: 9vw;
     border-radius: 3rem;
     font-size: 3vw;
     transition: all 0.8s;
-                
 }
 
 .boton:hover {
-
     background-color: #1f8a70;
     box-shadow: 5px 5px 5px #00425a;
-
 }
 
 .boton a {
-
     color: #eff5f5;
     text-decoration: none;
-
 }
-
 
 /* = Aside = */
 
-
 .noticiero {
-    
     color: #181823;
     background-color: #1f8a70;
     grid-area: noticiero;
-    
 }
 
 .tablilla {
-
     column-count: 1;
-        
 }
 
 .noticia {
-
     break-inside: avoid;
     padding: 1rem;
-    
 }
-
 
 /* = Footer = */
 
-
 .pie {
-
     display: grid;
     grid-gap: 1px;
     grid-template-columns: 1fr;
@@ -364,94 +273,67 @@ li a:hover {
     justify-content: space-evenly;
     align-content: stretch;
     grid-area: pie;
-
 }
 
 .redes {
-
     color: #181823;
     background-color: #eff5f5;
     grid-area: redes;
-
 }
 
 .domicilio {
-
     color: #181823;
     background-color: #eff5f5;
     grid-area: domicilio;
-
 }
 
 .mapa {
-
     padding: 2rem 0;
-
 }
 
 .contacto {
-
     color: #181823;
     background-color: #eff5f5;
     grid-area: contacto;
-
 }
 
 .contieneRedes, .contieneContactos {
-
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 3rem 0;
-    
 }
 
 .iconos, .iconoF {
-
     background-color: #eff5f5;
     width: calc(2rem + 2vw);
     height: calc(2rem + 2vw);
     transition: all 0.8s;
-
 }
 
 .iconos:hover {
-
     box-shadow: 5px 5px 5px #1f8a70;
     border-radius: 5rem;
-
 }
 
 .iconoF:hover {
-
     box-shadow: 5px 5px 5px #1f8a70;
     border-radius: 0.9rem;
-
 }
-
 
 /* === Diseño con brek point a 450px sólo para las imágenes .box2 y .box3 === */
 
-
 @media screen and (min-width: 450px) {
-
     .box2, .box3 {
-    
         width: 250px;
         height: 157px;
-           
     }
-
 }
-
 
 /* === Diseño con brek point a 768px === */
 
-
 @media screen and (min-width: 768px) {
-
     .contenedor {
-
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(5, auto);
         grid-template-areas:    "navegacion     navegacion      navegacion"
@@ -459,77 +341,57 @@ li a:hover {
                                 "principal      principal       noticiero"
                                 "propuesta      propuesta       noticiero"
                                 "pie            pie             pie";
-
     }
 
     .principal {
-
         grid-template-columns: 1fr;
         grid-template-rows: 2;
         grid-template-areas:    "somos"
                                 "elegirnos";
-
     }
 
     .boton {
-
         width: 90px;
         height: 54px;
         font-size: 1.4rem;
-                
     }
 
     .pie {
-
         grid-template-columns: 33%  33.6%  33.4%;
         grid-template-rows: 1;
         grid-template-areas:    "redes   domicilio  contacto";
-    
     }
 
     .contieneRedes, .contieneContactos {
-
         padding: 15rem 0;
-        
     }
-
 }
 
 /* === Diseño con brek point a 1024px === */
 
-
 @media screen and (min-width: 1024px) {
-
     .principal {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1;
         grid-template-areas:    "somos  elegirnos";
-
     }
 
     .tablilla {
-
         column-count: 2;
         column-gap: 20px;
         column-rule: 2px solid #181823;
         padding-bottom: 1rem;
-
     }
 
     .boton {
-
         width: 120px;
         height: 75px;
         font-size: 1.8rem;
-                
     }
-
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-
     .menu {
-
         display: block;
         position: absolute;
         background-color: rgba(255, 255, 255, 0.95);
@@ -538,32 +400,22 @@ li a:hover {
         padding: 0 2rem;
         transition: all 600ms ease;
         transform: translateX(-100%);
-
     }
 
     li a {
-
         font-size: 1.6rem;
         line-height: 3.5rem;
-
     }
 
     #desplegable:hover ~ .menu {
-
         transform: translateX(0%);
-
     }
 
     .menu:hover {
-
         transform: translateX(0%);
-
     }
 
     .despliega {
-
         display: block;
-        
     }
-
 }
